@@ -1,2 +1,33 @@
 @use "presets" as *;
 @use "mixins" as *;
+.footer{
+  padding-top: 45px;
+  color: #d5d5d5;
+  background-color: #232323;
+  &-descriptions{
+    h3{
+      font-size: 18px;
+      margin-top: 10px;
+    }
+    a{
+      color: #6f6f6f;
+    }
+    ul{
+      padding:0;
+      list-style: none;
+
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+  }
+  &-name{
+    &__item{
+      margin: 20px 0;
+    text-align: center;
+     a{
+   color: #d5d5d5;
+   font-weight: 700;
+    }
+    }
+  }
+}

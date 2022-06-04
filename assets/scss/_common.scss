@@ -7,7 +7,7 @@ html {
 }
 body {
   font-size: $font-size;
-  font-size: $font-main;
+  font-family: $font-main;
 }
 
 a {
@@ -21,7 +21,46 @@ a {
 }
 h1 {
   font-family: $font-header;
+  margin: -$gap-md 0 1em;
+  font-size: 3rem;
+  @include xs-min {
+    font-size: 3rem;
+  }
+  @include xs {
+    font-size: 2rem;
+  }
+  &:after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    border-bottom: 3px solid $color-accent-light;
+    margin: 0.85em 0 0 $gap;
+  }
 }
 h2 {
   font-family: $font-header;
+  @include xs-min {
+    font-size: 2.5rem;
+  }
+  @include xs {
+    font-size: 1.75rem;
+  }
+  &:before {
+    content: " ";
+    position: absolute;
+    width: 5%;
+    border-bottom: 3px solid $color-accent-light;
+    margin: 0.3em 0 0 -50px;
+  }
+  &:after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    border-bottom: 3px solid $color-accent-light;
+    margin: 0.85em 0 0 $gap;
+  }
+}
+section {
+  position: relative;
+  overflow: hidden;
 }

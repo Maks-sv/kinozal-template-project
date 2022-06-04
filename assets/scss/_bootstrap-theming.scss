@@ -63,10 +63,7 @@
   border: none;
   box-shadow: none;
   background-color: $color-gray-light;
-
-  &:not(last-of-type) {
-    margin-bottom: $gap * 2;
-  }
+  margin-bottom: $gap * 2;
 
   &:last-of-type {
     margin-bottom: 0;
@@ -86,4 +83,7 @@
 .input-lg,
 .input-group-lg > .form-control {
   font-size: 0.875rem;
+}
+.thumbnail {
+  transition: background-color 0.25s;
 }
