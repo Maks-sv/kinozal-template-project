@@ -43,6 +43,11 @@ $image-size-with-padding: $image-size + $gap-md;
     min-height: $image-size-with-padding;
     margin-bottom: $gap;
   }
+  &:last-of-type{
+   &::after{
+      width: 0;
+   }
+  }
   &:after {
     content: "";
     position: absolute;

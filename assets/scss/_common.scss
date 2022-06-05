@@ -48,9 +48,9 @@ h2 {
   &:before {
     content: " ";
     position: absolute;
-    width: 5%;
+    width: 35px;
     border-bottom: 3px solid $color-accent-light;
-    margin: 0.3em 0 0 -50px;
+    margin: 0.25em 0 0 -50px;
   }
   &:after {
     content: " ";

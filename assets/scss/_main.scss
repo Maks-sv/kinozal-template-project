@@ -11,13 +11,11 @@
     margin-bottom: $gap * 4;
   }
 }
-.top-week {
-  h2 {
-    margin-left: 50px;
-  }
-}
 .new-films,
 .top-week {
+  h2{
+    margin: 60px 0 45px 45px;
+  }
   &-row {
     margin-left: -$gap-sm;
     margin-right: -$gap-sm;
@@ -27,14 +25,17 @@
     padding-left: $gap-sm;
     padding-right: $gap-sm;
     margin-bottom: $gap;
-
+    &__caption {
+      text-align: center;
+    }
     &__title {
       @include text-shortener;
+      font-size: 1rem;
+      margin: 0;
+      font-weight : bold;
     }
     &__thumbnail {
       margin-bottom: 0;
     }
-  }
-  &__caption {
   }
 }
