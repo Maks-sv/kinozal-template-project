@@ -45,3 +45,7 @@
 
   border: 0;
 }
+@mixin bg-color{
+  border-color: $color-accent;
+  background-color: $color-accent;
+}

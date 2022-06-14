@@ -62,8 +62,7 @@ $image-size-with-padding: $image-size + $gap-md;
       color: $color-accent;
     }
     .thumbnail {
-      background-color: $color-accent;
-      border-color: $color-accent;
+      @include bg-color
     }
   }
 
@@ -97,7 +96,7 @@ $image-size-with-padding: $image-size + $gap-md;
     margin-bottom: 0;
   }
   &__item {
-    padding-right: 20px;
+    padding-right: $gap-2;
     background-color: transparent;
     margin-left: -1px;
     margin-right: -1px;

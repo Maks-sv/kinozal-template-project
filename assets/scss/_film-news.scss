@@ -1,0 +1,41 @@
+@use "presets" as *;
+@use "mixins" as *;
+.film-news{
+  &-item{
+    &:hover h3 > a{
+        color: $color-accent;
+  }
+    &:hover{
+    .thumbnail {
+      @include bg-color
+     }
+    }
+    &:hover{
+      .btn-warning{
+        background-color: $color-accent;
+      }
+    }
+    &__text{
+      text-align: justify;
+    }
+    &__button{
+      float:right;
+      margin-bottom:30px;
+      transition: background-color 0.25s;
+    }
+    &__thumbnail{
+      margin-bottom: 0;
+    }
+    &__image{
+      width: 100%;
+    }
+  }
+  h3{
+    @include xs {
+      font-size: 1.25rem;
+    }
+    a{
+      transition:color 0.25s;
+    }
+  }
+}

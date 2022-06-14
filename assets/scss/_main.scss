@@ -2,8 +2,14 @@
 @use "mixins" as *;
 
 .main {
-  margin-bottom: $gap-xl;
-
+  margin-bottom:$gap-xl;
+  h2{
+    margin: 60px 0 45px 45px;
+    @include xs {
+      margin: 45px 0 30px 45px;
+    }
+  }
+ 
   .site-search {
     margin-bottom: $gap * 3;
   }
@@ -13,9 +19,6 @@
 }
 .new-films,
 .top-week {
-  h2{
-    margin: 60px 0 45px 45px;
-  }
   &-row {
     margin-left: -$gap-sm;
     margin-right: -$gap-sm;
@@ -25,6 +28,11 @@
     padding-left: $gap-sm;
     padding-right: $gap-sm;
     margin-bottom: $gap;
+    &:hover{
+      h3{
+        color:  $color-white;
+      }
+    }
     &__caption {
       text-align: center;
     }
@@ -37,5 +45,8 @@
     &__thumbnail {
       margin-bottom: 0;
     }
+    &__image{
+      width: 100%;
+     }
   }
 }
